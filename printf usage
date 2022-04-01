@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+void main()
+{
+    int a;
+    a=100;
+    printf("The value of a is %d",a);
+
+}
