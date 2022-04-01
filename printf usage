@@ -4,6 +4,7 @@ void main()
 {
     int a;
     a=100;
-    printf("The value of a is %d",a);
+    printf("The value of a is %d\n",a);
+    printf("HELLO CHETU");
 
 }
