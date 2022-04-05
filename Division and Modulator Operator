@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+void main()
+{
+    int a,b,q,r;
+    printf("Enter a and b");
+    scanf("%d %d",&a,&b);
+    q=a/b;
+    r=a%b;
+    printf("\n Quotient is  %d",q);
+    printf("\n Remainder is  %d",r);
+
+}
