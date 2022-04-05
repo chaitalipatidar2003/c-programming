@@ -1,0 +1,34 @@
+// METRES TO KILOMETRES CONVERSION********************
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int mt;
+//     float km;
+//     printf("Enter the distance in metres ");
+//     scanf("%d",&mt);
+
+//     km=mt/(float)1000;
+//     printf(" KM = %.4f",km);
+
+// }
+
+
+//KILOMETRES TO METRES CONVERSION***********************
+
+#include<stdio.h>
+
+void main()
+{
+    float km;
+    int mt;
+
+    printf("Enter the distance in km ");
+    scanf("%f",&km);
+
+    mt=km*1000;
+
+    printf("KM=%d ",mt);
+
+}
