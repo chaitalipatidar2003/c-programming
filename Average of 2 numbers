@@ -2,11 +2,12 @@
 
 void main()
 {
-    int a,b,avg;
+    int a,b;
+    float avg;
     printf("Enter a and b");
     scanf("%d %d",&a,&b);
-    avg=(a+b)/2;
-    printf("The average of two numbers is : %d ",avg);
+    avg=(a+b)/2.0;
+    printf("The average of two numbers is : %f ",avg);
     
 
 }
