@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+void main()
+{
+    int a,b; 
+    float res;
+    printf("Enter a and b ");
+    scanf("%d %d",&a,&b);
+    res=(float)a/(float)b;
+    printf("Result=%.2f",res); //%.2f gives the result till 2 digits after decimal
+
+}
