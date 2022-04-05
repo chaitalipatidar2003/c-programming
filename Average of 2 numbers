@@ -3,10 +3,10 @@
 void main()
 {
     int a,b;
-    float avg;
+    float avg; //it can be fraction
     printf("Enter a and b");
     scanf("%d %d",&a,&b);
-    avg=(a+b)/2.0;
+    avg=(a+b)/2.0; //int/float gives float value.....if we divide int/int , will give int only not the fraction
     printf("The average of two numbers is : %f ",avg);
     
 
