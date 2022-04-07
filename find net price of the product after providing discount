@@ -1,0 +1,18 @@
+// Write a programme to find net price of the product after providing discount*******************
+
+#include <stdio.h>
+
+void main()
+{
+    float price, netamt, dis;
+    printf("Enter price");
+    scanf("%f", &price);
+
+    if (price >= 500)
+        dis = (price * 20) / 100;
+    else
+        dis = (price * 10) / 100;
+
+    netamt = price - dis;
+    printf("Net amount=%f", netamt);
+}
