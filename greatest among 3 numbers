@@ -1,0 +1,26 @@
+// Write a programme to check greatest among 3 numbers************************
+// using nested formate
+
+#include <stdio.h>
+
+void main()
+{
+    int a, b, c;
+    printf("Enter a ,b and c");
+    scanf("%d%d%d", &a, &b, &c);
+
+    if (a > b)
+    {
+        if (a > c)
+            printf("A");
+        else
+            printf("C");
+    }
+    else
+    {
+        if (b > c)
+            printf("B");
+        else
+            printf("C");
+    }
+}
