@@ -1,0 +1,13 @@
+//write a programme to check given character is vowel or not*********************************
+#include<stdio.h>
+
+void main()
+{
+    char ch;
+    printf("Enter any character");
+    scanf("%c",&ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+    printf("Vowels");
+    else
+    printf("Not vowel");
+}
