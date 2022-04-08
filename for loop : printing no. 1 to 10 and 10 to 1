@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void main()
+// {
+//     int i;
+//     printf("\n START");
+//     for (i= 1 ; i <=10; i++)
+//     {
+//         printf("\n %d",i);
+        
+
+//     }
+//     printf("\n END ");
+    
+// }
+
+{
+    int i;
+    printf("\n START");
+    for (i= 10 ; i>=1; i--)
+    {
+        printf("\n %d",i);
+        
+
+    }
+    printf("\n END ");
+    
+}
