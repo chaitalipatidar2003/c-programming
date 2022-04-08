@@ -7,11 +7,11 @@ void main()
     printf("enter n");
     scanf("%d",&n);
 
-for ( i =n; i>=1; i--)
+for ( int i =1; i<=n; i++)
 {
     fact=i*fact;
 
-    printf("The factorial of i is %d\n",fact);
+    printf("The factorial of n is %d\n",fact);
 }
 
 }
