@@ -1,0 +1,16 @@
+//print a^b*************************************
+#include<stdio.h>
+void main()
+{
+    int a,b,p=1,i;
+    printf("Enter a and b");
+    scanf("%d%d",&a,&b); 
+
+    for ( i = 1; i <=b; i++)
+    {
+        p=p*a;
+        printf("power=%d\n",p);
+
+    }
+    
+}
