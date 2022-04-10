@@ -1,0 +1,22 @@
+//While loop: factorial**************************
+
+#include<stdio.h>
+
+void main()
+{
+int i,n,fact=1;
+
+printf("Enter n");
+scanf("%d",&n);
+
+i=n;
+while (i>=1)
+{
+    fact=fact*i;
+    i--;
+
+}
+printf("%d",fact);
+
+
+}
