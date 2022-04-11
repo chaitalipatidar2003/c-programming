@@ -1,0 +1,22 @@
+//DO WHILE LOOP : sum of 2 numbers********************************
+#include<stdio.h>
+
+void main()
+{
+    int a,b,sum;
+    char ans;
+
+
+do
+{
+   printf("Enter a and b");
+    scanf("%d %d",&a,&b);
+    sum=a+b;
+    printf("\nsum of a and b is %d",sum);
+
+    printf("\n Do you want to add more numbers");
+    scanf("%c",&ans);
+
+
+} while (ans=='y');
+}
