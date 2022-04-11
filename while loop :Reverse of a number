@@ -1,0 +1,21 @@
+//uncertain times vala case while loop****************************
+//print the reverse of a number
+
+#include<stdio.h>
+void main()
+{
+    int n,r,t=0;
+     printf("Enter n");
+        scanf("%d",&n);
+
+    while(n!=0)
+    {
+
+        r=n%10;
+        n=n/10;
+        t=t*10+r;
+    }
+
+        printf("the reverse of a number n is %d",t);
+
+}
