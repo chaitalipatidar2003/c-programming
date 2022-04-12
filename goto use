@@ -1,0 +1,31 @@
+// goto application**************
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i=1;
+// pt: printf("%d\n",i);
+//     i++;
+//     if(i<=10)goto pt;
+
+//     printf("Program Ended\n");
+// }
+
+// factorial using goto
+
+#include <stdio.h>
+
+void main()
+{
+    int i, n, fact = 1;
+    printf("Enter a number\n");
+    scanf("%d", &n);
+
+ft:  fact = fact * i;
+    i++;
+    if (i <= n)
+        goto ft;
+
+    printf("The factorial of n is %d  ",fact);
+}
