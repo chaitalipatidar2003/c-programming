@@ -1,0 +1,17 @@
+//exit usage******************************
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+    int i;
+    for(i=1;i<=10;i++)
+    {
+        if(i>5) 
+        exit(0);
+        printf("%d\n",i);
+        
+    }
+    printf("END!!!!!.....");
+    
+}
