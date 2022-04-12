@@ -1,0 +1,34 @@
+//BREAK ********************************************************
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i;
+//     for(i=1;i<=10;i++)
+//     {
+//         if(i>5) 
+//         break;
+//         printf("%d\n",i);
+//     }
+//     printf("END!!!!!.....");
+// }
+
+//CONTINUE**********************************************************
+#include<stdio.h>
+
+void main()
+{
+    int i,age,vid;
+
+    for(i=1;i<=10;i++)
+    {
+        printf("Enter the age");
+        scanf("%d",&age);
+
+        if(age<18)
+        continue;
+        printf("Enter voter id number");
+        scanf("%d",&vid);
+    }
+    
+}
