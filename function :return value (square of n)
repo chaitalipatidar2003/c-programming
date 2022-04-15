@@ -1,0 +1,22 @@
+//function:return value (square of n)**********************
+#include<stdio.h>
+int square(int);                         //declaration of function
+
+void main()
+{int n,s;
+printf("We are in main function\n");
+    printf("Enter n\n");
+    scanf("%d",&n);
+
+ s=square(n);                             //actual parameter
+ printf("Square=%d\n",s);
+printf("Bye\n");
+}
+
+int square(int n)                         //formal parameter
+{
+    int sq;
+    sq=n*n;
+    
+return(sq);
+}
