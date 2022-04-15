@@ -1,0 +1,15 @@
+#include<stdio.h>
+void welcome();
+
+void main()
+{
+    printf("Hello\n");
+welcome();
+    printf("Bye\n");
+}
+
+void welcome()
+{
+    printf("Welcome to all\n");
+
+}
