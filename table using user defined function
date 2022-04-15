@@ -1,0 +1,27 @@
+//table using user defined function*********we can't use return value for obtaining multiple values************
+#include <stdio.h>
+void table(int num);
+
+void main()
+{
+    int n,t;
+    // printf("Enter a number\n");
+    // scanf("%d", &n);
+
+    table(n);
+    printf("Table created..........!!!!!\n");
+}
+
+void table(int num )
+{
+    int i, n, t;
+    printf("Enter a number\n");
+     scanf("%d", &n);
+    // n=4;
+
+    for (i = 1; i <= 10; i++)
+    {
+        t = n*i;
+        printf(" %d*%d=%d\n", n,i,t);
+    }
+}
