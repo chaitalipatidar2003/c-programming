@@ -1,0 +1,21 @@
+//Program to find the square of a number using function****************************
+
+#include<stdio.h>
+void square();
+
+void main()
+{
+printf("We are in main function\n");
+ square();
+printf("Bye\n");
+}
+
+void square()
+{
+    int n,sq;
+    printf("Enter n\n");
+    scanf("%d",&n);
+    sq=n*n;
+    printf("Square=%d\n",sq);
+
+}
