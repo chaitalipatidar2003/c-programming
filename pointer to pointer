@@ -1,0 +1,13 @@
+//pointer to pointer*************************
+
+#include<stdio.h>
+
+void main()
+{
+    int a=10,*p,**q;
+    p=&a;
+    q=&p;
+    printf("\na=%d",a);
+    printf("\n*p=%d",*p);
+    printf("\n**q=%d",**q);
+}
