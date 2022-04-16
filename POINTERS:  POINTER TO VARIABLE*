@@ -1,0 +1,22 @@
+//POINTERS*****************POINTER TO VARIABLE*****************
+
+#include<stdio.h>
+
+void main()
+{
+    int a=10,*p;
+    p=&a;
+    printf("Value of a is %d\n",a);
+    printf("Value of a is %d\n",*p);
+
+    printf("Address of a is %u\n",&a);
+    printf("Value of pointer is %u\n",p);
+
+    *p=200;
+    printf("A=%d\n",a);
+
+    a=500;
+    printf("Value of a pointer is %d\n",*p);
+
+
+}
