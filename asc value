@@ -1,0 +1,90 @@
+//asc value****************using character********************
+#include<stdio.h>
+
+void main()
+{
+    int i,j;
+
+    for ( i = 65; i <=90; i++)
+    {
+        for ( j= 1; j <=5; j++)
+        {
+            printf(" %c ",i);
+        }
+        printf("\n");
+    }
+    
+}
+
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i,j;
+
+//     for ( i = 97; i <=122; i++)
+//     {
+//         for ( j= 1; j <=5; j++)
+//         {
+//             printf(" %c ",i);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i,j;
+
+//     for ( i = 91; i <=96; i++)
+//     {
+//         for ( j= 1; j <=5; j++)
+//         {
+//             printf(" %c ",i);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i,j;
+
+//     for ( i = 1; i <=3; i++)
+//     {
+//         for ( j= 97; j <=122; j++)
+//         {
+//             printf(" %c ",j);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int i,j;
+
+//     for ( i = 1; i <=3; i++)
+//     {
+//         for ( j= 1; j <=300; j++)
+//         {
+//             printf(" %c ",j);
+//         }
+//         printf("\n");
+//     }
+    
+// }
