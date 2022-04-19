@@ -1,0 +1,20 @@
+// sum of series using power
+// S= 1^1+2^2+3^3+.........+n^n
+
+#include <stdio.h>
+
+void main()
+{
+    int i, j, n, p, sum = 0;
+    printf("Enter the limit of series");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++)
+    {
+        p = 1;
+        for (j = 1; j <= i; j++)
+        p = p * i;
+        sum = sum + p;
+    }
+    printf("sum= %d ", sum);
+}
