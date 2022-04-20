@@ -1,0 +1,27 @@
+// sum of series using functions
+// S =1^1+2^2+3^3+...................+n^n
+
+#include <stdio.h>
+int pow(int a , int b);
+
+void main()
+{
+    int i, n, sum = 0;
+
+    printf("Enter the limit of series");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        sum = sum + pow(i, i);
+    }
+    printf("sum= %d", sum);
+}
+
+int pow(int a, int b)
+{
+    int i, p = 1;
+    for (i = 1; i <= b; i++)
+
+        p = p * a;
+    return (p);
+}
