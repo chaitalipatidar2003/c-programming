@@ -1,0 +1,74 @@
+ //Recursion: print number 1 to 10***********
+// #include<stdio.h>
+// void show(int n);
+
+// void main()
+// {
+//     // int n;
+//     // printf("Enter n");
+//     // scanf("%d",&n);
+
+//     show(1);
+
+// }
+
+// void show(int n)
+// {
+
+//     if (n<=10)
+//     {
+//         printf("%d \n",n);
+
+//         show(n+1);
+//     }
+
+// }
+
+// Recursion: print number 1 to n***********
+//  #include<stdio.h>
+//  void show(int n);
+
+// void main()
+// {
+//     int n;
+//     printf("Enter n");
+//     scanf("%d",&n);
+
+//     show(1);
+
+// }
+
+// void show(int n)
+// {
+
+// if (n<=50)
+
+//     {
+//         printf("%d \n",n);
+
+//         show(n+1);
+//     }
+
+// }
+
+// Recursion:table
+#include <stdio.h>
+void show(int a);
+
+void main()
+{
+    int n;
+    printf("Enter n");
+    scanf("%d", &n);
+
+    show(1);
+}
+
+void show(int a)
+{
+    int n;
+
+    if (a <= 10)
+    printf("%d * %d = %d \n", n, a,n*a);
+   show(a + 1);
+}
