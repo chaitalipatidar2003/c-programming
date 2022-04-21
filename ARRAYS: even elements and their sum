@@ -1,0 +1,46 @@
+// ARRAYS: even elements and their sum**************
+
+#include <stdio.h>
+
+void main()
+{
+    int a[5], i;
+    printf("Enter the elements of array \n");
+    for (i = 0; i <= 4; i++)
+        scanf("%d", &a[i]);
+
+    printf("Even elements of array are \n");
+    for (i = 0; i <= 4; i++)
+    {
+        if (a[i] % 2 == 0)
+            printf(" %d ", a[i]);
+         else
+             printf("");
+     }
+}
+
+
+#include <stdio.h>
+
+void main()
+{
+    int a[5], i,sum=0;
+//    printf("Enter the elements of array \n");
+    for (i = 0; i <= 4; i++)
+        scanf("%d", &a[i]);
+
+    printf("Even elements of array are \n");
+    for (i = 0; i <= 4; i++)
+    {
+//        if (a[i] % 2 == 0)
+//        
+//            printf("%d",a[i]);
+       
+     
+     if (a[i] % 2 == 0)
+      sum=sum +a[i]; 
+     
+  
+ }
+ printf(" sum of even elements is %d",sum);
+}
