@@ -1,0 +1,41 @@
+//*************************ARRAYS****************************************************************
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     int a[5],i;
+
+//     //Reading the elements***********
+//     printf("Enter elements of array");
+//     for(i=0;i<=4;i++)
+//     scanf("%d",&a[i]);
+
+//     //Printing the elements************
+//     printf("Elements of array - \n");
+//     for ( i = 0; i <=4; i++)
+//     printf(" %d ",a[i]);
+    
+// }
+
+
+
+
+// ************reverse order of ARRAYS****************
+#include<stdio.h>
+
+void main()
+{
+    int a[5],i;
+
+    //Reading the elements***********
+    printf("Enter elements of array \n");
+    for(i=0;i<=4;i++)
+    scanf("%d",&a[i]);
+
+    //Printing the elements************
+    printf("Elements of array in reverse sequence - \n");
+    for ( i = 4; i>=0; i--)
+    printf(" %d ",a[i]);
+    
+}
