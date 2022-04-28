@@ -1,0 +1,28 @@
+//***************3D ARRAY AND SUM OF ELEMENTS OF A ROW**********************
+#include <stdio.h>
+
+void main()
+{
+    int a[3][3][3], i, j, k, total = 0;
+
+    printf("Enter the elements of 3D array- ");
+    for (i = 0; i <= 2; i++)
+        for (j = 0; j <= 2; j++)
+            for (k = 0; k <= 1; k++)
+                scanf("%d ", &a[i][j][k]);
+
+    printf("Elements of 3D array - \n");
+    for (i = 0; i <= 2; i++)
+    {
+
+        for (j = 0; j <= 2; j++)
+            for (k = 0; k <= 1; k++)
+            {
+                printf("%d ", a[i][j][k]);
+                total = total + a[i][j][k];
+            }
+
+        printf("Total=%d", total);
+        printf("\n");
+    }
+}
