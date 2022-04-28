@@ -1,0 +1,42 @@
+// sorting of elements using function**************
+
+#include <stdio.h>
+void sort(int arr[]);
+
+void main()
+{
+    int a[5], i;
+
+    printf("Enter the elements of an array \n");
+    for (i = 0; i <= 4; i++)
+        scanf("%d", &a[i]);
+
+    sort(a);
+}
+
+void sort(int arr[])
+{
+    int i, j, temp;
+
+    for (i = 0; i <= 4; i++)
+    {
+        for (j = 0; j <= (4 - i); j++)
+        
+
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+
+            
+            
+        }
+    }
+    printf("Sorted elements of array are ");
+            for (i = 0; i <= 4; i++)
+            
+                printf(" %d ", arr[i]);
+}
