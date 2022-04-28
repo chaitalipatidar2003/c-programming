@@ -1,0 +1,25 @@
+//*******************ARRAY & FUNCTIONS**********************************
+
+#include<stdio.h>
+void sumarr(int arr[]);
+
+void main()
+{
+    int a[5],i;
+
+    printf("Enter the elements of an array \n");
+    for ( i = 0; i <=4; i++)
+    scanf("%d",&a[i]);
+
+    sumarr(a);  //PASSING ARRAY TO FUNCTION
+    
+}
+
+void sumarr(int arr[])
+{
+    int sum=0,i;
+    for ( i = 0; i <=4; i++)
+    sum=sum + arr[i];
+
+    printf("sum= %d ",sum);
+}
