@@ -1,0 +1,16 @@
+//******************STRING : name*************
+
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+    char name[20];                    // string************
+
+    printf("Enter name ");
+    // scanf("%s",name);              //will use when printing space in string is not allowed***********
+
+    gets(name);                       // neglect space************
+
+    printf("Hello %s", name);
+}
