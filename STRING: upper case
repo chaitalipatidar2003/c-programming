@@ -1,0 +1,40 @@
+//*************STRING: upper case********************
+
+#include<stdio.h>
+#include<string.h>
+
+void main()
+{
+    char str[500];
+    int i,l;
+    printf("Enter your string ");
+    gets(str);
+
+    printf("Given string is %s \n",str);
+    l=strlen(str);
+
+    i=0;
+    while (str[i] != '\0')
+    {
+        str[i]=str[i]-32;
+        i++;
+       
+    }
+
+
+    // for ( i = 0; str[i]!='\0';i++)
+    // {
+    //     if (str[i]>=97 && str[i]<=122)
+    //     {
+    //         printf(" %c",str[i]-32);
+    //     }
+    //     else
+    //     {
+    //       printf("%c",str[i]);
+    //     }
+        
+    // }
+    
+    printf("%s",str);
+
+}
