@@ -1,0 +1,27 @@
+//*******************STRING : LENGTH USING FUNCTION************************
+
+#include<stdio.h>
+int strlength(char STR[]);
+
+int main()
+{
+    char str[30];
+
+    printf("Enter the string ");
+    gets(str); 
+
+    printf("The length of a string : %d ",strlength(str));
+
+}
+
+int strlength(char STR[])
+{
+int count=0;
+    while (STR[count]!='\0')
+    {
+        count++;
+    }
+    return (count);
+
+}
+
