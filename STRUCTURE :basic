@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+struct emp
+{
+    int code;
+    char name;
+    char dept;
+    float salary;
+};
+
+void main()
+{
+    struct emp e;
+    printf("Enter code,name,department,salary");
+    scanf("%d %s %s %f", &e.code, &e.name, &e.dept, &e.salary);
+
+    printf("CODE: %d\n", e.code);
+    printf("NAME: %s\n", e.name);
+    printf("DEPARTMENT: %s\n", e.dept);
+    printf("SALARY: %f\n", e.salary);
+}
