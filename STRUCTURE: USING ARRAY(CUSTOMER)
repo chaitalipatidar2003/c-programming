@@ -1,0 +1,60 @@
+//******************STRUCTURE: USING ARRAY(CUSTOMER)**********
+
+#include<stdio.h>
+
+struct customer
+{
+    int id;
+    char name[20];
+    char add[30];
+
+};
+
+void main()
+{
+    struct customer c[3];
+    int i;
+
+    for ( i = 0; i <=2; i++)
+    {
+        printf("Enter ID ,NAME,ADRESS");
+        scanf("%d %s %s\n",&c[i].id,c[i].name,c[i].add);
+    }
+
+    printf("Customer details are - ");
+
+    for ( i = 0; i <=2; i++)
+    {
+        printf("%d %s %s \n",c[i].id,c[i].name,c[i].add);
+    }
+}
+
+//*******************************************************************************direct input of data*************
+// #include<stdio.h>
+
+// struct customer
+// {
+//     int id;
+//     char name[20];
+//     char add[30];
+
+// };
+
+// void main()
+// {
+//     struct customer c[3]={{1,"A","I"},{2,"B","B"},{3,"C","B"}};
+//     int i;
+    
+//     // for ( i = 0; i <=2; i++)
+//     // {
+//     //     printf("Enter ID ,NAME,ADRESS");
+//     //     scanf("%d %s %s\n",&c[i].id,c[i].name,c[i].add);
+//     // }
+
+//     printf("Customer details are - ");
+
+//     for ( i = 0; i <=2; i++)
+//     {
+//         printf("%d %s %s \n",c[i].id,c[i].name,c[i].add);
+//     }
+// }
