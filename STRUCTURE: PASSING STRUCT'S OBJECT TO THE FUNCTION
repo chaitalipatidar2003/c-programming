@@ -1,0 +1,29 @@
+//******************STRUCTURE: PASSING STRUCT'S OBJECT TO THE FUNCTION*************
+
+#include<stdio.h>
+struct emp
+{
+    char name[20];
+    char post[30];
+    float sal;
+    float comm;
+};
+
+void show(struct emp E)
+
+void main()
+{
+struct emp e;
+printf("\n Enter name,post,salary and commision ");
+scanf(" %s %s %f %f\n",e.name,e.post,&e.sal,&e.comm);
+
+show(e);
+
+}
+
+
+void show(struct emp E)
+{
+    printf(" %s %s %f %f\n",E.nameE.post,E.sal,E.comm);
+}
+
