@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+struct emp
+{
+    char name[20];
+    char post[30];
+    float sal;
+    float comm;
+
+};
+
+void main()
+{
+    struct emp e[3];
+    int i;
+    
+    for ( i = 0; i <=2; i++)
+    {
+        printf("Enter NAME,post,salary, and commision\n");
+        scanf(" %s %s %f %f\n",e[i].name,e[i].post,&e[i].sal,&e[i].comm);
+    }
+
+    printf("Employ details are - \n");
+
+    for ( i = 0; i <=2; i++)
+    {
+        printf(" %s %s %f %f\n",e[i].name,e[i].post,e[i].sal,e[i].comm);
+    }
+}
