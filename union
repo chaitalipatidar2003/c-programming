@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+union demo
+{
+    char c;
+    int i;
+    float f;
+};
+
+void main()
+{
+    union demo d;
+    d.c = 'A';
+    d.i = 50;
+    d.f = 3.14;
+    d.i = 20;
+    
+}
