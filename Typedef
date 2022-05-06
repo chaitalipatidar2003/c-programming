@@ -1,0 +1,32 @@
+#include<stdio.h>
+struct emp
+{
+    int code;
+    char name[20];
+    float sal;
+    float comm;
+};
+
+typedef struct emp worker;
+void showdetail(worker E)
+
+void main()
+{
+worker e;
+printf("\n Enter code,name,salary and commision ");
+scanf("%d %s %f %f\n",&e.code,e.name,&e.sal,&e.comm);
+
+showdetail(e);
+
+}
+
+
+void showdetail(worker E)
+{
+    printf("Code:  %d \n",E.code);
+    printf("Name:  %s \n",E.name);
+    printf("net salary:  %.2f \n",E.sal+E.comm);
+
+
+}
+
