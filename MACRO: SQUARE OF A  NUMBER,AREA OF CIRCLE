@@ -1,0 +1,58 @@
+// //**************************MACRO: SQUARE OF A  NUMBER**************
+
+// #include<stdio.h>
+
+// #define square(n) n*n
+
+// void main()
+// {   
+//     int n,s;
+
+//     printf("Enter the number ");
+//     scanf("%d",&n);
+
+//     s=square(n);
+//     printf("Square of the number is %d",s);
+
+// }
+
+
+
+//*****************************area of a circle***********************
+
+// #include<stdio.h>
+
+// #define pi 3.14159265
+
+// void main()
+// {   
+//     int r;
+//     float area;
+
+//     printf("Enter the radius");
+//     scanf("%d",&r);
+
+//     area=pi*r*r;
+//     printf("area of a circle is %f",area);
+
+//  }
+
+//************* or*****************************
+
+#include<stdio.h>
+
+#define pi 3.14159265
+#define square(r) r*r
+#define area(r) pi*square(r)
+
+void main()
+{   
+    float r,a;
+
+    printf("Enter the radius");
+    scanf("%f",&r);
+
+    a=area(r);
+    printf("area of a circle is %f",a);
+
+}
