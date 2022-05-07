@@ -1,0 +1,30 @@
+// //***************************MACRO:  GREATEST between 2 numbers******************
+
+// #include<stdio.h>
+// #define big(a,b) (a>b)?(a):(b)
+
+// void main()
+// {
+//     int a,b,max;
+//     printf("Enter a and b");
+//     scanf("%d %d",&a,&b);
+
+//     printf("Biggest value = %d",big(a,b));
+
+// }
+
+
+//GREATEST between 3 numbers******************
+
+#include<stdio.h>
+#define big(a,b,c) (a>b)?((a>c)?(a):(c)) : ((b>c)?(b):(c))
+
+void main()
+{
+    int a,b,c,max;
+    printf("Enter a ,b and c");
+    scanf("%d %d %d",&a,&b,&c);
+
+    printf("Biggest value = %d",big(a,b,c));
+    
+}
