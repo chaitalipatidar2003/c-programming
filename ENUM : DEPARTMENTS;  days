@@ -1,0 +1,32 @@
+//***************************ENUM : DEPARTMENTS**********************
+
+// #include<stdio.h>
+
+// void main()
+// {
+//     enum depts {sales=10,prod=20,mkt=10,purch,acc,hra};
+
+//     enum depts dept_no;
+//     dept_no=hra;
+
+//     printf("I am in Dept number : %d",dept_no);
+
+// }
+
+
+
+
+#include<stdio.h>
+
+void main()
+{
+    enum days {mon,tues,wed,thurs,fri,sat,sun};  // 0 to 6
+
+    enum days day_of_week;
+    day_of_week=sat;
+
+    printf("the day is : %d",day_of_week);
+
+}
+
+
