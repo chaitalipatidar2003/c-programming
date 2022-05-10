@@ -1,0 +1,25 @@
+//****************************************DYNAMIC MEMORY ALLOCATION:print table******************************************
+
+#include<stdio.h>
+#include<malloc.h>
+
+void main()
+{
+    int *p;
+    int n;
+    
+    printf("Enter the number\n");
+    scanf("%d",&n);
+
+    p=(int *)malloc(sizeof(int));
+    *p=1;
+    while(*p<=10)
+    {
+
+        printf("%d\n",n*(*p));
+        (*p)++;
+    }
+    free(p);
+    printf("Program ended");
+
+}
