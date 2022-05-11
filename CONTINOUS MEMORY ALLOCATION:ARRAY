@@ -1,0 +1,26 @@
+//****************************************continous MEMORY ALLOCATION:ARRAY******************************************
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+    int *p;
+    int i,n;
+    
+    printf("Enter the limit of array \n");
+    scanf("%d",&n);
+
+    p=(int *)calloc(n,sizeof(int));
+    
+    for ( i = 0; i<n; i++)
+    {
+      p[i]=i+ 10;
+      printf("p[%d] %d \n",i,p[i]);
+
+    }
+    
+    free(p);
+    printf("Program ended");
+
+}
