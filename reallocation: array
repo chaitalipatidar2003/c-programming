@@ -1,0 +1,36 @@
+//*************************************reallocation**************
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    int *p;
+    int i, n, m;
+
+    printf("Enter the size array \n");
+    scanf("%d", &n);
+
+    p = (int *)malloc(sizeof(int));
+
+    for (i = 0; i < n; i++)
+    {
+        p[i] = *p + 1;
+        printf("p[%d] %d \n", i, p[i]);
+    }
+
+    // reallocating*********8
+    printf("Enter new size : \n");
+    scanf("%d ", &m);
+
+
+p= realloc(p,n);
+    printf("Adress of newly allocated memory: \n");
+
+    for (i = 0; i < m; i++)
+    {
+        p[i] = *p + 1;
+        printf("p[%d]%d \n", i,p[i]);
+    }
+    free(p);
+    printf("Program ended");
+}
