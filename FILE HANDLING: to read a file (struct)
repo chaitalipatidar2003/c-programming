@@ -1,0 +1,36 @@
+//*****************************FILE HANDLING: to read a file (struct)*****************
+#include<stdio.h>
+#include<stdlib.h>
+
+struct emp
+{
+    int code;
+    char name[20];
+    char post[20];
+};
+
+void main()
+{
+    FILE *fp;
+    struct emp e;
+
+    fp=fopen("company.txt","r");
+
+    if(fp==NULL)
+    {
+        printf("File can not opened....!!!!");
+        exit(0);
+    }
+fwrite(&e,sizeof(e),1,fp);
+
+    printf("Enter code,name and post\n");
+    scanf("%d %s %s ",&e.code,&e.name,&e.post);
+
+printf(" code: %d \n",e.code);
+    printf(" name: %s \n",e.name);
+    printf(" post: %s \n",e.post);
+    
+    
+    fclose(fp);
+    
+}
