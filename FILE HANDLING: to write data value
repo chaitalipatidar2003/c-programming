@@ -1,0 +1,25 @@
+//********************FILE HANDLING: to write data value*****************
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+    FILE *fp;
+    int code;
+    char name[20];
+    char post[20];
+
+    fp=fopen("company.txt","w");
+
+    if(fp==NULL)
+    {
+        printf("File can not opened....!!!!");
+        exit(0);
+    }
+
+    printf("Enter code,name and post");
+    scanf("%d %s %s ",&code,&name,&post);
+
+    fclose(fp);
+    
+}
