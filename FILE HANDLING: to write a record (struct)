@@ -1,0 +1,31 @@
+//********************FILE HANDLING: to write a record (struct)*****************
+#include<stdio.h>
+#include<stdlib.h>
+
+struct emp
+{
+    int code;
+    char name[20];
+    char post[20];
+};
+
+void main()
+{
+    FILE *fp;
+    struct emp e;
+
+    fp=fopen("company.txt","w");
+
+    if(fp==NULL)
+    {
+        printf("File can not opened....!!!!");
+        exit(0);
+    }
+
+    printf("Enter code,name and post");
+    scanf("%d %s %s ",&e.code,&e.name,&e.post);
+
+    fwrite(&e,sizeof(e),1,fp);
+    fclose(fp);
+    
+}
