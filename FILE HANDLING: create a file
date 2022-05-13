@@ -1,0 +1,24 @@
+//*******************************FILE HANDLING: create a file*********************************************
+
+#include<stdio.h>
+
+void main()
+{
+    FILE *fp;
+    char ch;
+    fp=fopen("University.txt","w");
+
+    while (1)
+    {
+       scanf("%c",&ch);
+
+       if (ch=='0')
+          break;
+
+       fputc(ch,fp);
+
+       
+    }
+
+    fclose(fp);
+}
