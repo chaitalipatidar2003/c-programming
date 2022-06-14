@@ -1,0 +1,49 @@
+//**************************9. BINARY SEARCH in array
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a[10],i,search;
+    int MB=4,LB=0,UB=9;    
+    cout<<"Enter the elements of array in ascending order\n";
+    for ( i = 0; i <10; i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"The elements of array\n";
+    for ( i = 0; i <10; i++)
+    {
+        cout<<a[i]<<" "<<endl;
+    }
+    
+    cout<<"Enter the element to be searched \n";
+    cin>>search;
+    while(a[LB]!=a[UB])
+   {
+    if(search==a[MB])
+       {cout<<"Number found in mid of array : "<<a[MB];
+       break;
+       }
+
+    else if(search<a[MB])
+    {
+        UB=a[MB-1];
+        MB=a[(LB+UB)/2];
+        cout<<"Element found in first half \n";
+        break;
+
+    }   
+    else if(search>a[MB])
+      {
+        LB=a[MB+1];
+        MB=a[(LB+UB)/2];
+        cout<<"Element found in second half \n";
+        break;
+      }
+      else{
+        cout<<"Element not found.."; 
+      }
+   }
+    return 0;
+}
